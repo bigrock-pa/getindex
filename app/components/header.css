@@ -1,0 +1,21 @@
+h1 {
+    margin-top: 70px;
+}
+
+.header {
+    width: 100%;
+    background: #0000002e;
+    margin-bottom: -64px;
+    z-index: 1;
+}
+
+.header .btn-primary {
+    border-radius: 22px;
+    background-color: #749ddd;
+    border-color: #749ddd;
+}
+
+.header .btn-primary:hover {
+    background-color: #5982c4;
+    border-color: #5982c4;
+}

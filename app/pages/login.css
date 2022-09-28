@@ -1,0 +1,18 @@
+.center-form {
+    height: 100%;
+}
+
+.login .btn-primary {
+    border-radius: 40px;
+    background-color: #749ddd;
+    border-color: #749ddd;
+}
+
+.login .form-control {
+    border-radius: 40px;
+}
+
+.login .form-control,
+.login .btn-primary {
+    min-height: 58px;
+}

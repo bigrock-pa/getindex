@@ -1,0 +1,138 @@
+body {
+  background-color: #fdf;
+}
+
+.logo {
+  width: 32px;
+  margin-right: 7px;
+  height: 32px;
+}
+
+.logo-text {
+  margin-top: -3px;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.loading-block {
+  height: 200px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.blog-itemtext {
+  font-size: 80%;
+}
+
+.analytics h2 {
+  font-size: 120%;
+  padding: 30px 30px 20px;
+}
+
+.analytics .btn-primary {
+  border-radius: 22px;
+  background-color: #749ddd;
+  border-color: #749ddd;
+}
+
+.analytics-desktop,
+.analytics-phone {
+  position: relative;
+}
+
+.analytics-desktopscreen,
+.analytics-phonescreen {
+  position: absolute;
+}
+
+.analytics-desktopscreen {
+  top: 29px;
+  left: 47px;
+}
+
+.analytics-desktopscreen img {
+  width: 310px;
+}
+
+.analytics-phonescreen {
+  top: 22px;
+  left: 24px;
+}
+
+.analytics-phonescreen img {
+  width: 104px;
+  border-radius: 12px;
+}
+
+.analytics-item img {
+  max-width: 70%;
+}
+
+.analytics-item {
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.analytics-item:hover {
+  background: #f5f5f5;
+}
+
+.analytics-itemico {
+  font-size: 140%;
+  opacity: 0.8;
+}
+
+.analytics-iteminfo {
+  border-top: 1px solid #dfdfdf;
+  background: #f5f5f5;
+}
+
+.analytics-iteminfo-inner {
+  padding: 20px 30px;
+}
+
+.ratinguniverlist button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .logo-text {
+    margin-top: 0px;
+  }
+}
