@@ -61,7 +61,7 @@ const Main = () => {
 							<div className="d-flex col-8 text-center mb-3">
 								<div className="d-flex flex-column col-12">
 									<h1>Инструменты аналитики</h1>
-									<span>Проверьте абсолютно любой сайт и узнайте о его качестве</span>
+									<span>Проверьте любой сайт и узнайте о его качестве</span>
 								</div>
 							</div>
 							<form onSubmit={submit} className="d-flex col-10 col-md-6 justify-content-between mainform">
