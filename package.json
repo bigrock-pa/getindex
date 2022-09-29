@@ -1,8 +1,8 @@
 {
     "name": "getindex.ru",
     "description": "A React.js project using Webpack",
-    "version": "1.0.0",
-    "author": "metanit.com",
+    "version": "1.0.8",
+    "author": "bigrock-pa",
     "scripts": {
         "dev": "webpack serve",
         "build": "webpack --mode=production"
