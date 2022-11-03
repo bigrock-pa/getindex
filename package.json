@@ -1,7 +1,7 @@
 {
     "name": "getindex.ru",
     "description": "getindex.ru (react, redux, webpack)",
-    "version": "1.08",
+    "version": "1.1.11",
     "author": "bigrock-pa",
     "scripts": {
         "dev": "webpack serve",
