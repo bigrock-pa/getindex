@@ -13,6 +13,7 @@ import Login from './pages/Login';
 import PageAnalytics from './pages/PageAnalytics';
 import Profile from './pages/Profile';
 import Rating from './pages/Rating';
+import MyIp from './pages/MyIpPage';
 import Page404 from './pages/Page404';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAuthreducer } from './reducers/reposAuthreducer';
@@ -48,7 +49,7 @@ function App() {
 
                 <div className="flex-grow-1">
                     <Routes>
-                        <Route path="" element={<Main />}></Route>
+                        <Route path="" element={<Main />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/tools" element={<Tools />} />
@@ -56,6 +57,7 @@ function App() {
                         <Route path="/login" element={<Login />} />
                         <Route path="/analytic" element={<PageAnalytics />} />
                         <Route path="/profile" element={<Profile />} />
+                        <Route path="/myip" element={<MyIp />} />
                         <Route path="/rating" element={<Rating />} />
                         <Route path="*" element={<Page404 />} />
                     </Routes>

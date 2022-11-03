@@ -44,13 +44,13 @@ const RatingUniverList = ({ univers }) => {
 
 	const [searchList, setSearchList] = useState();
 	const handleChange = event => {
-		setSearchList(event.target.value);
+		setSearchList(event.target.value.toLowerCase());
 	};
 
 	const searchAndSortedRows = !searchList
 		? sortedRows
 		: sortedRows.filter(univer =>
-			univer.name.includes(searchList)
+			univer.name.toLowerCase().includes(searchList)
 		);
 
 	const getClassNamesFor = (name) => {

@@ -17,6 +17,7 @@ const PageAnalyticsServer = () => {
 	const [opensponsordomain, setOpenSponsorDomain] = useState(false);
 	const [openagedomain, setOpenAgeDomain] = useState(false);
 	const [opencreateddomain, setOpenCreatedDomain] = useState(false);
+	const [openip, setOpenIp] = useState(false);
 
 	const [response_status, setResponsestatus] = useState('');
 	const [robot, setRobot] = useState('');
@@ -24,6 +25,7 @@ const PageAnalyticsServer = () => {
 	const [sponsor_domain, setSponsorDomain] = useState('');
 	const [created_domain, setCreatedDomain] = useState('');
 	const [age_domain, setAgeDomain] = useState('');
+	const [ip, setIp] = useState('');
 
 	useEffect(() => {
 		(
@@ -44,6 +46,7 @@ const PageAnalyticsServer = () => {
 				setSponsorDomain(content2.sponsor_domain);
 				setCreatedDomain(content2.created_domain);
 				setAgeDomain(content2.age_domain);
+				setIp(content2.ip);
 			}
 		)();
 	});
@@ -150,6 +153,31 @@ const PageAnalyticsServer = () => {
 				</Collapse>
 			</div>
 
+			<div className="analytics-item d-flex align-items-center flex-column flex-md-row" onClick={() => setOpenIp(!openip)}
+				aria-controls="collapse-ip"
+				aria-expanded={openip}>
+				<div className="d-flex align-items-center col-12 col-md-4">
+					<div className="analytics-itemico">
+						{ip ? <FontAwesomeIcon icon={faCheckCircle} className="text-success me-2" /> : <FontAwesomeIcon icon={faTimesCircle} className="text-danger me-2" />}
+					</div>
+					<div>
+						IP-адрес сервера
+					</div>
+				</div>
+				<div className="col-12 col-md-8">
+					{ip ? ip : <span className="text-danger">Данные отсутствуют</span>}
+				</div>
+			</div>
+			<div>
+				<Collapse in={openip}>
+					<div className="analytics-iteminfo" id="collapse-ip">
+						<div className="analytics-iteminfo-inner">
+							<b>Справка.</b> IP-адрес сервера.
+						</div>
+					</div>
+				</Collapse>
+			</div>
+
 			<div className="analytics-item d-flex align-items-center flex-column flex-md-row" onClick={() => setOpenSponsorDomain(!opensponsordomain)}
 				aria-controls="collapse-sponsordomain"
 				aria-expanded={opensponsordomain}>
@@ -224,6 +252,7 @@ const PageAnalyticsServer = () => {
 					</div>
 				</Collapse>
 			</div>
+
 
 		</div>
 
